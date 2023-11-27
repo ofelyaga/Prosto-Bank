@@ -146,36 +146,36 @@ nav.addEventListener('mouseover', navLinksHoverAnimation.bind(0.4));
 
 nav.addEventListener('mouseout', navLinksHoverAnimation.bind(1));
 
-// Sticky navigation
+//Sticky navigation
 
-// const section1Coords = section1.getBoundingClientRect();
-// // console.log(section1Coords);
+const section1Coords = section1.getBoundingClientRect();
+// console.log(section1Coords);
 
-// window.addEventListener('scroll', function () {
-//   // console.log(window.scrollY);
+window.addEventListener('scroll', function () {
+  // console.log(window.scrollY);
 
-//   if (window.scrollY > section1Coords.top) {
-//     nav.classList.add('sticky');
-//   } else {
-//     nav.classList.remove('sticky');
-//   }
-// });
+  if (window.scrollY > section1Coords.top) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+});
 
-// Sticky navigation - Intersection Observer API
+//Sticky navigation - Intersection Observer API
 
-// const observerCallback = function (entries, observer) {
-//   entries.forEach(entry => {
-//     console.log(entry);
-//   });
-// };
+const observerCallback = function (entries, observer) {
+  entries.forEach(entry => {
+    console.log(entry);
+  });
+};
 
-// const observerOptions = {
-//   root: null,
-//   threshold: [0, 0.2],
-// };
+const observerOptions = {
+  root: null,
+  threshold: [0, 0.2],
+};
 
-// const observer = new IntersectionObserver(observerCallback, observerOptions);
-// observer.observe(section1);
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+observer.observe(section1);
 
 const header = document.querySelector('.header');
 const navHeight = nav.getBoundingClientRect().height;

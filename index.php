@@ -1,10 +1,10 @@
 <?php
-include 'modules/database.php';
-include 'db/MySQL.php';
-
-$db = new \db\MySQL('header');
-var_dump($db->get([]));
-?>
+//include 'modules/database.php';
+//include 'db/MySQL.php';
+//
+//$db = new \db\MySQL('header');
+//var_dump($db->get([]));
+//?>
 
 <!DOCTYPE html>
 <html lang="ru">
